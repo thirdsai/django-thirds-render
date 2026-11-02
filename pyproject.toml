@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-thirds-render"
+version = "0.1.0"
+description = "Render Django templates and HTML to PDF and PNG with the thirds.ai API, and save them to FileFields."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "thirds.ai", email = "listings@thirds.ai" }]
+requires-python = ">=3.10"
+dependencies = ["Django>=5.2,<6.2"]
+keywords = ["django", "pdf", "png", "html to pdf", "open graph", "thirds.ai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 5.2",
+    "Framework :: Django :: 6.1",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Text Processing :: Markup :: HTML",
+]
+
+[project.optional-dependencies]
+test = ["jsonschema>=4.18"]
+
+[project.urls]
+Homepage = "https://github.com/thirdsai/django-thirds-render"
+Source = "https://github.com/thirdsai/django-thirds-render"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

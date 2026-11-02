@@ -1,0 +1,9 @@
+{% load static %}<!doctype html>
+<html><head><meta charset="utf-8"><title>Invoice {{ object.number }}</title>
+<link rel="stylesheet" href="{% static 'demo/invoice.css' %}"></head>
+<body>
+<header><img src="{% static 'demo/logo.png' %}" alt="" width="48" height="48"><h1>Invoice {{ object.number }}</h1></header>
+<p class="to">Billed to {{ object.customer }}</p>
+<table><tr><th>Item</th><th>Amount</th></tr><tr><td>Design and build</td><td>{{ object.total }}</td></tr></table>
+<p class="total">Total {{ object.total }}</p>
+</body></html>

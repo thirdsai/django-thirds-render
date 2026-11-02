@@ -1,0 +1,2 @@
+include LICENSE README.md runtests.py
+recursive-include tests *.py *.html *.css *.png
